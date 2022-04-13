@@ -164,7 +164,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MusicPlayer\MusicPlayer.csproj">
+    <ProjectReference Include="..\..\..\MusicPlayer\MusicPlayer\MusicPlayer.csproj">
       <Project>{fcb9d141-970d-4dfa-8ee0-51d05343e9c5}</Project>
       <Name>MusicPlayer</Name>
     </ProjectReference>
