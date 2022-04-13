@@ -1,0 +1,93 @@
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.exe.config
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.exe
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.pdb
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC_Music_Server.MusicServerForm.resources
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC_Music_Server.Properties.Resources.resources
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.GenerateResource.cache
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CoreCompileInputs.cache
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.exe
+H:\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.pdb
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.exe.config
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.exe
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.pdb
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC_Music_Server.MusicServerForm.resources
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC_Music_Server.Properties.Resources.resources
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.GenerateResource.cache
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CoreCompileInputs.cache
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CopyComplete
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.exe
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.pdb
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Buffers.dll
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Memory.dll
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Numerics.Vectors.dll
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\CsvHelper.xml
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\Microsoft.Bcl.HashCode.xml
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Documents\Tafe\Dip_Of_Programming\Programming 3\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.exe.config
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.exe
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\JMC Music Server.pdb
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\CsvHelper.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\JMCMusicPlayer.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Buffers.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Memory.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\JMCMusicPlayer.pdb
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\CsvHelper.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Buffers.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Memory.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC_Music_Server.MusicServerForm.resources
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC_Music_Server.Properties.Resources.resources
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.GenerateResource.cache
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CopyComplete
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.exe
+C:\Users\Andrew\Programs\C-Sharp\Project\JMC Music Server\JMC Music Server\obj\Debug\JMC Music Server.pdb
+E:\C#\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.exe.config
+E:\C#\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.exe
+E:\C#\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.pdb
+E:\C#\Music-Server\JMC Music Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\C#\Music-Server\JMC Music Server\bin\Debug\System.Buffers.dll
+E:\C#\Music-Server\JMC Music Server\bin\Debug\System.Memory.dll
+E:\C#\Music-Server\JMC Music Server\bin\Debug\System.Numerics.Vectors.dll
+E:\C#\Music-Server\JMC Music Server\bin\Debug\CsvHelper.xml
+E:\C#\Music-Server\JMC Music Server\bin\Debug\Microsoft.Bcl.HashCode.xml
+E:\C#\Music-Server\JMC Music Server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\C#\Music-Server\JMC Music Server\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC_Music_Server.MusicServerForm.resources
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC_Music_Server.Properties.Resources.resources
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.GenerateResource.cache
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CoreCompileInputs.cache
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CopyComplete
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.exe
+E:\C#\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.pdb
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.exe.config
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.exe
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.pdb
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\bin\Debug\System.Buffers.dll
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\bin\Debug\System.Memory.dll
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.SuggestedBindingRedirects.cache
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.exe.config
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC_Music_Server.MusicServerForm.resources
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC_Music_Server.Properties.Resources.resources
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.GenerateResource.cache
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CoreCompileInputs.cache
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CopyComplete
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.exe
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.pdb
+E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
