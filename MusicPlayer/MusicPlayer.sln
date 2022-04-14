@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayer", "MusicPlayer\MusicPlayer.csproj", "{FCB9D141-970D-4DFA-8EE0-51D05343E9C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music Player", "..\Music-Player\JMC Music Player\JMC Music Player\Music Player.csproj", "{2536B955-4CDA-4833-8DD0-6C685F15AFB1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMC Music Server", "..\Music-Server\JMC Music Server\JMC Music Server.csproj", "{95928864-90D4-4F33-AD46-F8F8B4C0DF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMC Music Player", "..\Music-Player\JMC Music Player\JMC Music Player.csproj", "{2536B955-4CDA-4833-8DD0-6C685F15AFB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{FCB9D141-970D-4DFA-8EE0-51D05343E9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCB9D141-970D-4DFA-8EE0-51D05343E9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCB9D141-970D-4DFA-8EE0-51D05343E9C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{95928864-90D4-4F33-AD46-F8F8B4C0DF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{95928864-90D4-4F33-AD46-F8F8B4C0DF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95928864-90D4-4F33-AD46-F8F8B4C0DF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95928864-90D4-4F33-AD46-F8F8B4C0DF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2536B955-4CDA-4833-8DD0-6C685F15AFB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

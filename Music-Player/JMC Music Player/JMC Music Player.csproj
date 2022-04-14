@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95928864-90D4-4F33-AD46-F8F8B4C0DF29}</ProjectGuid>
+    <ProjectGuid>{2536B955-4CDA-4833-8DD0-6C685F15AFB1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>JMC_Music_Server</RootNamespace>
-    <AssemblyName>JMC Music Server</AssemblyName>
+    <RootNamespace>JMC_Music_Player</RootNamespace>
+    <AssemblyName>JMC Music Player</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper, Version=27.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
-      <HintPath>..\..\JMCMusicPlayer\packages\CsvHelper.27.1.1\lib\net47\CsvHelper.dll</HintPath>
+      <HintPath>..\..\MusicPlayer\packages\CsvHelper.27.1.1\lib\net47\CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\JMCMusicPlayer\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -71,24 +72,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PasswordProcessor.cs" />
-    <Compile Include="ServerMessageData.cs" />
-    <Compile Include="ServerMessageProcessor.cs" />
-    <Compile Include="MusicServerForm.cs">
+    <Compile Include="BinarySearch.cs" />
+    <Compile Include="GUI\CreateAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MusicServerForm.Designer.cs">
-      <DependentUpon>MusicServerForm.cs</DependentUpon>
+    <Compile Include="GUI\CreateAccountForm.Designer.cs">
+      <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PasswordTester.cs" />
-    <Compile Include="PipeServer.cs" />
+    <Compile Include="GUI\IChildForm.cs" />
+    <Compile Include="GUI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MusicPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MusicPlayerForm.Designer.cs">
+      <DependentUpon>MusicPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PasswordProcessor.cs" />
+    <Compile Include="GUI\UserDetailsProcessor.cs" />
+    <Compile Include="MergeSorter.cs" />
+    <Compile Include="MusicController.cs" />
+    <Compile Include="UserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserView.Designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserList.cs" />
-    <Compile Include="Utility.cs" />
-    <EmbeddedResource Include="MusicServerForm.resx">
-      <DependentUpon>MusicServerForm.cs</DependentUpon>
+    <Compile Include="Song.cs" />
+    <EmbeddedResource Include="GUI\CreateAccountForm.resx">
+      <DependentUpon>CreateAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MusicPlayerForm.resx">
+      <DependentUpon>MusicPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserView.resx">
+      <DependentUpon>UserView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +125,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -114,10 +142,32 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\MusicPlayer\MusicPlayer\MusicPlayer.csproj">
       <Project>{fcb9d141-970d-4dfa-8ee0-51d05343e9c5}</Project>
       <Name>MusicPlayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -91,3 +91,21 @@ E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.cspro
 E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.exe
 E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.pdb
 E:\C#\MusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.exe.config
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.exe
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\JMC Music Server.pdb
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\MusicPlayer.dll
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\System.Buffers.dll
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\System.Memory.dll
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\bin\Debug\MusicPlayer.pdb
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.AssemblyReference.cache
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.SuggestedBindingRedirects.cache
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.exe.config
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC_Music_Server.MusicServerForm.resources
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC_Music_Server.Properties.Resources.resources
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.GenerateResource.cache
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CoreCompileInputs.cache
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.csproj.CopyComplete
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.exe
+E:\C#\LoginMusicPlayer\Music-Server\JMC Music Server\obj\Debug\JMC Music Server.pdb

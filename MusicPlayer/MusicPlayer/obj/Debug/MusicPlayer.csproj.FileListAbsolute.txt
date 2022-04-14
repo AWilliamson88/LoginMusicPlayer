@@ -4,3 +4,8 @@ E:\C#\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
 E:\C#\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.dll
 E:\C#\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
 E:\C#\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.AssemblyReference.cache
+E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.dll
+E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
+E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.CoreCompileInputs.cache
+E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.dll
+E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
