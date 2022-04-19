@@ -1,5 +1,6 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
+using MusicPlayer.Forms;
 using System;
 using System.Drawing;
 using System.Globalization;
@@ -20,15 +21,8 @@ namespace JMC_Music_Player.GUI
             InitializeComponent();
         }
 
-        /// <summary>
-        /// The controller for the music player.
-        /// </summary>
         private MusicController mc;
-        /// <summary>
-        /// The button that is currently active.
-        /// </summary>
         private Button activeButton;
-
 
         public event EventHandler<string> SendMessage;
 
@@ -115,10 +109,10 @@ namespace JMC_Music_Player.GUI
             {
                 using (OpenFileDialog openDialog = new OpenFileDialog())
                 {
-                    if (!Directory.Exists(@"..\..\..\..\Music"))
+                    if (!Directory.Exists(@"..\..\..\..\..\Music"))
                     {
                         // set initial directory
-                        openDialog.InitialDirectory = @"..\..\..\..\Music";
+                        openDialog.InitialDirectory = @"..\..\..\..\..\Music";
                     }
                     // set title
                     openDialog.Title = "Add song to playlist.";
@@ -155,24 +149,18 @@ namespace JMC_Music_Player.GUI
         {
             try
             {
-                if (!Directory.Exists(@"..\..\..\Songs"))
+                if (!Directory.Exists(@"..\..\Songs"))
                 {
-                    Directory.CreateDirectory(@"..\..\..\Songs");
+                    Directory.CreateDirectory(@"..\..\Songs");
                 }
-                if (!File.Exists(@"..\..\..\Songs\SongList.csv"))
+                if (!File.Exists(@"..\..\Songs\SongList.csv"))
                 {
-                    File.Create(@"..\..\..\Songs\SongList.csv");
+                    File.Create(@"..\..\Songs\SongList.csv");
                 }
 
-                using (var writer = new StreamWriter(@"..\..\..\Songs\SongList.csv"))
+                using (var writer = new StreamWriter(@"..\..\Songs\SongList.csv"))
                 using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
                 {
-                    //foreach (Song s in mc.GetSongList())
-                    //{
-                    //    //Console.Out.Write(s.Title + " ");
-                    //    Console.Out.Write(s.FilePath + " ");
-                    //    Console.Out.WriteLine();
-                    //}
                     csv.WriteRecords(mc.GetSongList());
                 }
             }
@@ -227,7 +215,6 @@ namespace JMC_Music_Player.GUI
             if (MusicPlayer.playState == WMPPlayState.wmppsPlaying)
             {
                 BtnStatePlaying();
-
             }
             else if (MusicPlayer.playState == WMPPlayState.wmppsPaused)
             {
@@ -275,8 +262,10 @@ namespace JMC_Music_Player.GUI
         {
             if (activeButton != null)
             {
+                if(activeButton == PlayPauseBtn)
+                    PlayPauseBtn.Text = "Play/Pause";
+
                 StopBtn.Text = "Stop";
-                PlayPauseBtn.Text = "Play/Pause";
                 activeButton.BackColor = default;
                 activeButton.UseVisualStyleBackColor = true;
                 activeButton.ForeColor = Color.FromKnownColor(KnownColor.ControlText);

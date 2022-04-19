@@ -30,7 +30,7 @@ namespace MusicPlayer.Forms
         public void ResetButtonStyles(Button button)
         {
             button.BackColor = Color.FromArgb(64, 64, 64);
-            button.ForeColor = Color.Gainsboro;
+            button.ForeColor = Color.WhiteSmoke;
             button.Font = new Font("Microsoft Sans Serif", 12F);
         }
 
@@ -87,11 +87,6 @@ namespace MusicPlayer.Forms
         #region Forms
         public void ShowFormInPanel(Panel panel, Form frm)
         {
-            //if (activeForm != null)
-            //{
-            //    activeForm.Close();
-            //}
-
             frm.TopLevel = false;
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;

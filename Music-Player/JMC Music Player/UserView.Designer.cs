@@ -116,7 +116,7 @@ namespace JMC_Music_Player
             // 
             this.MenuHeaderLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MenuHeaderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuHeaderLbl.ForeColor = System.Drawing.Color.Gainsboro;
+            this.MenuHeaderLbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.MenuHeaderLbl.Location = new System.Drawing.Point(0, 0);
             this.MenuHeaderLbl.Name = "MenuHeaderLbl";
             this.MenuHeaderLbl.Size = new System.Drawing.Size(200, 80);
@@ -139,12 +139,12 @@ namespace JMC_Music_Player
             // 
             this.TitleLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TitleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLbl.ForeColor = System.Drawing.Color.Gainsboro;
+            this.TitleLbl.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.TitleLbl.Location = new System.Drawing.Point(0, 0);
             this.TitleLbl.Name = "TitleLbl";
             this.TitleLbl.Size = new System.Drawing.Size(771, 80);
             this.TitleLbl.TabIndex = 0;
-            this.TitleLbl.Text = "HOME";
+            this.TitleLbl.Text = "AWESOME MUSIC PLAYER";
             this.TitleLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DesktopPanel
