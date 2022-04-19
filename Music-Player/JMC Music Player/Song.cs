@@ -18,26 +18,26 @@ namespace JMC_Music_Player
         /// The title of the song.
         /// First column in csv file with column header "title"
         /// </summary>
+        //[Name("title")]
         [Index(0)]
-        [Name("title")]
         public string Title { get; set; }
 
         /// <summary>
         /// The file path of the song.
         /// Second column in csv file with column header "filePath"
         /// </summary>
+        //[Name("filePath")]
         [Index(1)]
-        [Name("filePath")]
         public string FilePath { get; set; }
 
         /// <summary>
         /// Constructor to add a song using only file path.
         /// </summary>
-        /// <param name="filePath">The path to the song.</param>
-        public Song(string filePath)
+        /// <param name="FilePath">The path to the song.</param>
+        public Song(string FilePath)
         {
-            FilePath = filePath;
-            Title = Path.GetFileNameWithoutExtension(filePath);
+            this.FilePath = FilePath;
+            Title = System.IO.Path.GetFileNameWithoutExtension(FilePath);
         }
 
         public int CompareTo(Song other) => Title.CompareTo(other.Title);

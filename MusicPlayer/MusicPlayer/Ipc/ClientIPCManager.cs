@@ -1,20 +1,12 @@
-﻿using MusicPlayer.Factories;
-using MusicPlayer.Ipc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MusicPlayer.Ipc
+﻿namespace MusicPlayer.Ipc
 {
     public class ClientIPCManager : IClientIPCManager
     {
         public IClientConnection Connection { get; }
-        public IMessageProcessor MsgProccessor { get;}
+        public IMessageProcessor MsgProccessor { get; }
 
         public ClientIPCManager(
-            IClientConnection connection, 
+            IClientConnection connection,
             IMessageProcessor msgProcessor)
         {
             Connection = connection;

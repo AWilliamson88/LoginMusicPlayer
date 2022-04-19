@@ -83,6 +83,6 @@ namespace JMC_Music_Server
             ul.AddUser(clientMessage[1], passwordHash);
             return "Yes";
         }
-        
+
     }
 }

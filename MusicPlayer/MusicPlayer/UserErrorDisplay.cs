@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace MusicPlayer
 {
@@ -43,8 +38,8 @@ namespace MusicPlayer
         {
             MessageBox.Show(
                 "Username or Password incorrect.\n" +
-                "Please try again.", 
-                "Login Error", 
+                "Please try again.",
+                "Login Error",
                 MessageBoxButtons.OK
                 );
         }

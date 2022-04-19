@@ -1,6 +1,5 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
-using MusicPlayer.Forms;
 using System;
 using System.Drawing;
 using System.Globalization;
@@ -60,18 +59,13 @@ namespace JMC_Music_Player.GUI
         {
             try
             {
-                var config = new CsvConfiguration(CultureInfo.InvariantCulture)
-                {
-                    PrepareHeaderForMatch = args => args.Header.ToLower(),
-                    //HasHeaderRecord = false,
-                };
                 using (var reader = new StreamReader(@"..\..\..\Songs\SongList.csv"))
                 {
                     using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                     {
                         mc.ClearSongList();
-                        csv.Read();
-                        csv.ReadHeader();
+                        if (csv.Read() == true)
+                            csv.ReadHeader();
 
                         var records = csv.GetRecords<Song>();
 
@@ -92,7 +86,6 @@ namespace JMC_Music_Player.GUI
 
         }
 
-        // Opens the file dialog, calls the CheckForDuplicates(), adds the song.
         /// <summary>
         /// Opens the file dialog and adds the selected songs to the list.
         /// </summary>
@@ -149,18 +142,20 @@ namespace JMC_Music_Player.GUI
         {
             try
             {
-                if (!Directory.Exists(@"..\..\Songs"))
+                if (!Directory.Exists(@"..\..\..\Songs"))
                 {
-                    Directory.CreateDirectory(@"..\..\Songs");
+                    Directory.CreateDirectory(@"..\..\..\Songs");
                 }
-                if (!File.Exists(@"..\..\Songs\SongList.csv"))
+                if (!File.Exists(@"..\..\..\Songs\SongList.csv"))
                 {
-                    File.Create(@"..\..\Songs\SongList.csv");
+                    File.Create(@"..\..\..\Songs\SongList.csv");
                 }
 
-                using (var writer = new StreamWriter(@"..\..\Songs\SongList.csv"))
+                using (var writer = new StreamWriter(@"..\..\..\Songs\SongList.csv"))
                 using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
                 {
+                    csv.WriteHeader<Song>();
+                    csv.NextRecord();
                     csv.WriteRecords(mc.GetSongList());
                 }
             }
@@ -262,7 +257,7 @@ namespace JMC_Music_Player.GUI
         {
             if (activeButton != null)
             {
-                if(activeButton == PlayPauseBtn)
+                if (activeButton == PlayPauseBtn)
                     PlayPauseBtn.Text = "Play/Pause";
 
                 StopBtn.Text = "Stop";
@@ -305,7 +300,8 @@ namespace JMC_Music_Player.GUI
         #region MusicPlayerControls
         private void PlayPauseBtn_Click(object sender, EventArgs e)
         {
-            this.BeginInvoke(new Action(() => mc.PlayPause()));
+            //this.BeginInvoke(new Action(() => mc.PlayPause()));
+            mc.PlayPause();
 
             HighlightCurrentSongInDisplay();
             SetButtons();

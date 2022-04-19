@@ -1,5 +1,4 @@
 ﻿using MusicPlayer.Ipc;
-using System.Windows.Forms;
 
 namespace MusicPlayer.Forms
 {

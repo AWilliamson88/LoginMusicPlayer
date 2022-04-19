@@ -86,6 +86,7 @@ namespace JMC_Music_Player
                 {
                     currentSong = songs.First();
                     mediaPlayer.URL = currentSong.FilePath;
+                    mediaPlayer.Ctlcontrols.play();
                 }
             }
             else if (mediaPlayer.playState == WMPPlayState.wmppsPlaying)

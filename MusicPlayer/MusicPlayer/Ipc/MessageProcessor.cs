@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace MusicPlayer.Ipc
 {
     public class MessageProcessor : IMessageProcessor
-    {   
+    {
         private readonly IUser _user;
 
         public MessageProcessor(IUser user)

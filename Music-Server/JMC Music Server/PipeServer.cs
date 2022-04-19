@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Collections.Generic;
-using System.Threading;
 using System.IO;
 using System.Runtime.InteropServices;
-using Microsoft.Win32.SafeHandles;
+using System.Threading;
 
 /// <summary>
 /// Author: Andrew Williamson / P113357

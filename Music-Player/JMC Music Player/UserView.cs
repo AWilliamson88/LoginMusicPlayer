@@ -1,10 +1,8 @@
 ﻿using JMC_Music_Player.GUI;
 using MusicPlayer;
 using MusicPlayer.Forms;
-using MusicPlayer.Ipc;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Windows.Forms;
 
 /// <summary>
