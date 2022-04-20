@@ -28,8 +28,10 @@ namespace JMC_Music_Player
                 factory.GetConnection(),
                 factory.GetMessageProcessor());
 
-            var view = new UserView();
-            view.Presenter = factory.GetClientPresenter();
+            var view = new UserView
+            {
+                Presenter = factory.GetClientPresenter()
+            };
 
             var formManager = factory.GetClientFormManager(view, client);
 

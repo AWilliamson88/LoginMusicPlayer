@@ -18,7 +18,7 @@ namespace JMC_Music_Player
     {
         private LinkedList<Song> songs;
         private Song currentSong;
-        private AxWMPLib.AxWindowsMediaPlayer mediaPlayer;
+        private readonly AxWMPLib.AxWindowsMediaPlayer mediaPlayer;
 
         public MusicController(AxWMPLib.AxWindowsMediaPlayer player)
         {
@@ -114,7 +114,7 @@ namespace JMC_Music_Player
         /// </summary>
         public void Next()
         {
-            mediaPlayer.Ctlcontrols.stop();
+            //mediaPlayer.Ctlcontrols.stop();
             if (songs.Find(currentSong).Next != null)
             {
                 currentSong = songs.Find(currentSong).Next.Value;

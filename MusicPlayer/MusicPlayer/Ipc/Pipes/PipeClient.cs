@@ -41,7 +41,6 @@ namespace MusicPlayer.Ipc
            IntPtr hTemplate);
 
         const int BUFFER_SIZE = 4096;
-        static LinkedList<Thread> threads = new LinkedList<Thread>();
         FileStream stream;
         SafeFileHandle handle;
         Thread readThread;
@@ -142,7 +141,6 @@ namespace MusicPlayer.Ipc
             };
             shouldDisconnect = false;
 
-            threads.AddLast(readThread);
             readThread.Start();
         }
 

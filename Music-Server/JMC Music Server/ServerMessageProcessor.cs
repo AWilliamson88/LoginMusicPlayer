@@ -24,9 +24,8 @@ namespace JMC_Music_Server
         /// <summary>
         /// An instance of the UserList class that holds the list of users and related methods.
         /// </summary>
-        UserList ul;
+        private readonly UserList ul;
 
-        // Constructor
         public ServerMessageProcessor(UserList userList)
         {
             ul = userList;

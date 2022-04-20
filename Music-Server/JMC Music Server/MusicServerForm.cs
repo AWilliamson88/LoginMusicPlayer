@@ -19,7 +19,7 @@ namespace JMC_Music_Server
 {
     public partial class MusicServerForm : Form
     {
-        PipeServer pipeServer = new PipeServer();
+        readonly PipeServer pipeServer = new PipeServer();
 
         public MusicServerForm()
         {
@@ -33,8 +33,8 @@ namespace JMC_Music_Server
         /// <param name="e"></param>
         private void MusicServerForm_Load(object sender, EventArgs e)
         {
-            pipeServer.UpdateNumberOfClients += pipeServer_UpdateNumberOfClients;
-            pipeServer.MessageReceived += pipeServer_MessageReceived;
+            pipeServer.UpdateNumberOfClients += PipeServer_UpdateNumberOfClients;
+            pipeServer.MessageReceived += PipeServer_MessageReceived;
             StopBtn.Enabled = false;
         }
 
@@ -49,13 +49,13 @@ namespace JMC_Music_Server
             {
                 pipeServer.Stop();
                 pipeServer.SaveUserList();
-                pipeServer.MessageReceived -= pipeServer_MessageReceived;
-                pipeServer.UpdateNumberOfClients -= pipeServer_UpdateNumberOfClients;
+                pipeServer.MessageReceived -= PipeServer_MessageReceived;
+                pipeServer.UpdateNumberOfClients -= PipeServer_UpdateNumberOfClients;
             }
         }
 
         #region MessagesReceivedFromClients
-        private void pipeServer_MessageReceived(ServerMessageData e)
+        private void PipeServer_MessageReceived(ServerMessageData e)
         {
             Invoke(new PipeServer.MessageReceivedHandler(MessageReceived), new object[] { e });
         }
@@ -97,7 +97,7 @@ namespace JMC_Music_Server
         #endregion
 
         #region UpdateNumberOfClients
-        private void pipeServer_UpdateNumberOfClients()
+        private void PipeServer_UpdateNumberOfClients()
         {
             Invoke(new PipeServer.UpdateNumberOfClientsHandler(UpdateNumberOfClients));
         }

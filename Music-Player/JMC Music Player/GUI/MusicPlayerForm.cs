@@ -13,7 +13,7 @@ using WMPLib;
 /// </summary>
 namespace JMC_Music_Player.GUI
 {
-    public partial class MusicPlayerForm : Form, IChildForm
+    public partial class MusicPlayerForm : Form
     {
         public MusicPlayerForm()
         {
@@ -22,8 +22,6 @@ namespace JMC_Music_Player.GUI
 
         private MusicController mc;
         private Button activeButton;
-
-        public event EventHandler<string> SendMessage;
 
         #region Opening and Closing
         private void MusicPlayerForm_Load(object sender, EventArgs e)
@@ -319,7 +317,8 @@ namespace JMC_Music_Player.GUI
             mc.Next();
             HighlightCurrentSongInDisplay();
             SetButtons();
-            this.BeginInvoke(new Action(() => mc.PlayPause()));
+            //this.BeginInvoke(new Action(() => mc.PlayPause()));
+            mc.PlayPause();
         }
 
         private void PreviousBtn_Click(object sender, EventArgs e)
@@ -327,7 +326,8 @@ namespace JMC_Music_Player.GUI
             mc.Previous();
             HighlightCurrentSongInDisplay();
             SetButtons();
-            this.BeginInvoke(new Action(() => mc.PlayPause()));
+            //this.BeginInvoke(new Action(() => mc.PlayPause()));
+            mc.PlayPause();
         }
         #endregion
 
@@ -362,11 +362,6 @@ namespace JMC_Music_Player.GUI
         }
 
         #endregion
-
-        public void SendToUserView(string message)
-        {
-            throw new NotImplementedException();
-        }
 
     }
 }

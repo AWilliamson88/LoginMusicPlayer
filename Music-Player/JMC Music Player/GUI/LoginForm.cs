@@ -7,7 +7,7 @@ using System.Windows.Forms;
 /// </summary>
 namespace JMC_Music_Player.GUI
 {
-    public partial class LoginForm : Form, IChildForm
+    public partial class LoginForm : Form
     {
         public LoginForm()
         {

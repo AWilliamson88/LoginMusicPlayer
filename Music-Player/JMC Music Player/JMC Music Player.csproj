@@ -70,7 +70,7 @@
     <Compile Include="GUI\CreateAccountForm.Designer.cs">
       <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\IChildForm.cs" />
+    <Compile Include="GUI\ISendsMessages.cs" />
     <Compile Include="GUI\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

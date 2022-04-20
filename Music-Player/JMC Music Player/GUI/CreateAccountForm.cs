@@ -8,7 +8,7 @@ using static JMC_Music_Player.GUI.UserDetailsProcessor;
 /// </summary>
 namespace JMC_Music_Player.GUI
 {
-    public partial class CreateAccountForm : Form, IChildForm
+    public partial class CreateAccountForm : Form
     {
         public CreateAccountForm()
         {

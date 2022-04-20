@@ -20,7 +20,8 @@ namespace JMC_Music_Player
         /// <summary>
         /// The child form that is currently active.
         /// </summary>
-        private new IChildForm ActiveForm { get; set; }
+        //private new IChildForm ActiveForm { get; set; }
+        private new Form ActiveForm { get; set; }
         private LoginForm LgnFrm { get; set; }
         private CreateAccountForm CreateAccForm { get; set; }
         public IClientPresenter Presenter { get; set; }
@@ -183,7 +184,8 @@ namespace JMC_Music_Player
             Presenter.ActivateButton((Button)btnSender);
             Presenter.UpdateTitle(TitleLbl, childForm.Text);
             Presenter.ShowFormInPanel(DesktopPanel, childForm);
-            ActiveForm = (IChildForm)childForm;
+            //ActiveForm = (IChildForm)childForm;
+            ActiveForm = childForm;
         }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
@@ -214,13 +216,11 @@ namespace JMC_Music_Player
         /// </summary>
         private void Removelisteners()
         {
-            ActiveForm.SendMessage -= MessageFromForm;
+            if (ActiveForm.GetType() == typeof(CreateAccountForm))
+                CreateAccForm.SendMessage -= MessageFromForm;
 
-            //if (ActiveForm.Text.Equals("Login To Your Existing Account"))
-            //    LgnFrm.SendMessage -= MessageFromForm;
-
-            //if (ActiveForm.Text.Equals("Create A New Account"))
-            //    CreateAccountForm.SendMessage -= MessageFromForm;
+            if (ActiveForm.GetType() == typeof(LoginForm))
+                LgnFrm.SendMessage -= MessageFromForm;
         }
 
         /// <summary>

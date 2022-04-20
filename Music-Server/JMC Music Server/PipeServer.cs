@@ -86,7 +86,7 @@ namespace JMC_Music_Server
         readonly List<Client> clients = new List<Client>();
         private string pipeName;
         private bool isRunning;
-        private static UserList ul = new UserList();
+        private static readonly UserList ul = new UserList();
 
         public PipeServer()
         {
@@ -400,10 +400,7 @@ namespace JMC_Music_Server
                 clients.Remove(client);
             }
 
-            if (UpdateNumberOfClients != null)
-            {
-                UpdateNumberOfClients();
-            }
+            UpdateNumberOfClients?.Invoke();
 
         }
         #endregion
