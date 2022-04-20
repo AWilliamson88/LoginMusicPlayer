@@ -20,7 +20,6 @@ namespace JMC_Music_Player
         /// <summary>
         /// The child form that is currently active.
         /// </summary>
-        //private new IChildForm ActiveForm { get; set; }
         private new Form ActiveForm { get; set; }
         private LoginForm LgnFrm { get; set; }
         private CreateAccountForm CreateAccForm { get; set; }
@@ -63,17 +62,9 @@ namespace JMC_Music_Player
         /// <param name="e"></param>
         private void UserView_FormClosing(object sender, EventArgs e)
         {
-            CloseActiveForm();
+            CloseChildForm();
             user.StateChanged -= User_StateChanged;
             user.UserError -= User_Error;
-        }
-
-        private void CloseActiveForm()
-        {
-            if (ActiveForm != null)
-            {
-                ActiveForm.Close();
-            }
         }
         #endregion
 
@@ -114,7 +105,6 @@ namespace JMC_Music_Player
                     LoginBtn
                 }
             );
-
             Presenter.RestoreButton(MusicPlayerBtn);
         }
 
@@ -144,23 +134,22 @@ namespace JMC_Music_Player
         #endregion
 
         #region ServerDisconnected
-        //private void pipeClient_ServerDisconnected()
-        //{
-        //    Invoke(new PipeClient.ServerDisconnectedHandler(ServerDisconnected));
-        //}
 
         /// <summary>
         /// updates the form and removes the event listeners.
         /// </summary>
-        //private void ServerDisconnected()
-        //{
-        //    //UpdateTheForm();
-        //    Removelisteners();
-        //    //ClosePipeClient();
-        //    //SetupPipeClient();
-        //}
+        public void ServerDisconnected()
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => this.Close()));
+            }
+            else
+            {
+                this.Close();
+            }
+        }
         #endregion
-
 
         // Methods relatinng to the side panel menu buttons and their forms.
         #region ChildFormMethods
@@ -184,9 +173,18 @@ namespace JMC_Music_Player
             Presenter.ActivateButton((Button)btnSender);
             Presenter.UpdateTitle(TitleLbl, childForm.Text);
             Presenter.ShowFormInPanel(DesktopPanel, childForm);
-            //ActiveForm = (IChildForm)childForm;
             ActiveForm = childForm;
         }
+
+        private void CloseChildForm()
+        {
+            if (ActiveForm != null)
+            {
+                ActiveForm.Close();
+                Removelisteners();
+            }
+        }
+
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             if (ActiveForm.GetType() == typeof(LoginForm))

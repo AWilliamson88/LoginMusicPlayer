@@ -21,23 +21,19 @@ namespace MusicPlayer.Ipc
 
             if (msg[0] == "lo")
             {
-                LoginResult(msg[1]);
-                //return;
+                LoginResult(msg);
             }
             else if (msg[0] == "ce")
             {
                 AccountCreationResult(msg[1]);
-                //return;
             }
-
-            //_user.OnStateChanged();
-
         }
 
-        private void LoginResult(string result)
+        private void LoginResult(string[] result)
         {
-            if (result.Equals("Yes"))
+            if (result[1].Equals("Yes"))
             {
+                _user.UserName = result[2];
                 _user.CurrentState = User.State.LOGGED_IN;
             }
             else

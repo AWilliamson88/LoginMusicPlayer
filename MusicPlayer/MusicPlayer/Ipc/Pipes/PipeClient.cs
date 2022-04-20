@@ -8,26 +8,14 @@ using System.Threading;
 using System.Windows.Forms;
 
 /// <summary>
-/// Author: Andrew Williamson / P113357
-/// Programming III
-/// Assessment Tast 3
-/// Question 3 - Implement your solution
+/// Author: Andrew Williamson
 /// 
-/// - Must contain dynamic data structures
-/// - Must contain hashing techniques
-/// - Must contain sorting algorithm
-/// - Must contain searching technique
-/// - Must contain 3rd party library
-/// - Must have a GUI
-/// - Must adhere to coding standards
 /// </summary>
 namespace MusicPlayer.Ipc
 {
     /// <summary>
     /// This class is responsible for connecting to and communicating with the server.
     /// </summary>
-    // TODO: Consider making this a singleton, if you can only have 1 active at a time?
-    // TODO: Delegate interfaces.
     public sealed class PipeClient : IClientConnection
     {
         [DllImport("kernel32.dll", SetLastError = true)]
@@ -79,8 +67,6 @@ namespace MusicPlayer.Ipc
         /// <summary>
         /// The Event that is called when a message is received from the server.
         /// </summary>
-        //public event MessageReceivedHandler MessageReceived;
-
         public event EventHandler<byte[]> MessageReceived;
 
         /// <summary>
@@ -134,7 +120,6 @@ namespace MusicPlayer.Ipc
             isConnected = true;
 
             // Start listening for messages.
-            // TODO: Look into Thread with CancellationToken s , instead of the other method.
             readThread = new Thread(Read)
             {
                 IsBackground = true
@@ -165,11 +150,6 @@ namespace MusicPlayer.Ipc
                 handle.Close();
                 handle = null;
             }
-
-            //if (readThread != null)
-            //{
-            //    readThread.Interrupt();
-            //}
         }
 
         #endregion

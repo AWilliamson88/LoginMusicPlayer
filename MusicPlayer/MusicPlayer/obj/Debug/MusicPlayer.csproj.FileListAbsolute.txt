@@ -9,4 +9,3 @@ E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
 E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.CoreCompileInputs.cache
 E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.dll
 E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
-E:\C#\LoginMusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.AssemblyReference.cache

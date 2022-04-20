@@ -167,15 +167,6 @@ namespace JMC_Music_Server
         /// </summary>
         public event MessageReceivedHandler MessageReceived;
 
-        /// <summary>
-        /// Handles the CloseClient event.
-        /// </summary>
-        /// <param name="client">The client to close</param>
-        public delegate void CloseClientHandler(Client client);
-        /// <summary>
-        /// Event called when a client needs to be closed
-        /// </summary>
-        public event CloseClientHandler CloseClient;
         #endregion
 
         #region Start-Listening
@@ -301,7 +292,6 @@ namespace JMC_Music_Server
         }
         #endregion
 
-        // I had absolutely no idea you could add a space between the words until just now.
         #region Read Messages From Client
         /// <summary>
         /// Read messages from the client sends them to be processed.

@@ -1,5 +1,7 @@
 ﻿using MusicPlayer.Factories;
 using MusicPlayer.Ipc;
+using System;
+using System.Windows.Forms;
 
 namespace MusicPlayer.Forms
 {
@@ -7,7 +9,6 @@ namespace MusicPlayer.Forms
     {
         public IClientIPCManager ClientIPCManager { get; set; }
         public IUserView MainForm { get; set; }
-        public ClientFactory Factory { get; set; }
 
         public ClientFormManager(IUserView mainForm, IClientIPCManager clientIpcManager)
         {
@@ -15,14 +16,18 @@ namespace MusicPlayer.Forms
             ClientIPCManager = clientIpcManager;
 
             MainForm.MessageToServer += SendMessage;
+            clientIpcManager.ServerDisconnected += Ipc_Disconnected;
+        }
+
+        private void Ipc_Disconnected(object sender, EventArgs e)
+        {
+            MainForm.ServerDisconnected();
         }
 
         private void SendMessage(object sender, string message)
         {
             ClientIPCManager.SendMessage(message);
         }
-
-
 
     }
 }

@@ -49,7 +49,6 @@ namespace MusicPlayer
         protected virtual void OnStateChanged()
         {
             EventHandler<State> handler = StateChanged;
-            //StateChanged?.Invoke(UserName, CurrentState);
             handler?.Invoke(UserName, CurrentState);
         }
 

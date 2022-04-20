@@ -69,9 +69,6 @@ namespace JMC_Music_Server
         {
             string str = Utility.ConvertToString(messageData.CurrentMessage);
             string[] clientMessageArray = str.Split(',');
-            //Console.WriteLine("Message Code: " + clientMessageArray[0]);
-            //Console.WriteLine("Message Part 1: " + clientMessageArray[1]);
-            //Console.WriteLine("Message Part 2: " + clientMessageArray[2]);
 
             switch (clientMessageArray[0])
             {

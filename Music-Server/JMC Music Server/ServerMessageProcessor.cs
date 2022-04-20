@@ -42,21 +42,16 @@ namespace JMC_Music_Server
         /// password saved in the user list. Otherwise "No".</returns>
         public string LoginResultProcessor(string[] clientMessage)
         {
-            //Console.WriteLine("LoginResultProcessor");
-            //Console.WriteLine("Str[0] = " + clientMessage[0] + " Str[1] = " + clientMessage[1] + " Str[2] = " + clientMessage[2]);
             if (ul.CheckList(clientMessage[1]))
             {
                 PasswordProcessor pp = new PasswordProcessor();
                 string clientPasswordHash = pp.GeneratePasswordHash(clientMessage[2] + clientMessage[1]);
-                //Console.WriteLine("clientPasswordHash " + clientPasswordHash);
                 string userHash = ul.GetUserHash(clientMessage[1]);
-                //Console.WriteLine("userHash " + userHash);
 
                 PasswordTester pt = new PasswordTester();
                 if (pt.TestPasswords(userHash, clientPasswordHash))
-                    return "Yes";
+                    return "Yes," + clientMessage[1];
             }
-            //Console.WriteLine("No was returned from the login processor.");
             return "No";
         }
 
