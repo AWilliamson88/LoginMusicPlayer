@@ -72,7 +72,6 @@ namespace JMC_Music_Player.GUI
                             mc.Add(s);
                         }
                         DisplayAllSongs();
-                        SetButtons();
                     }
                 }
 
@@ -83,7 +82,6 @@ namespace JMC_Music_Player.GUI
             }
 
         }
-
         /// <summary>
         /// Opens the file dialog and adds the selected songs to the list.
         /// </summary>
@@ -132,7 +130,6 @@ namespace JMC_Music_Player.GUI
             }
 
         }
-
         /// <summary>
         /// Saves the list of users to a csv file using the 3rd party library CsvHelper.
         /// </summary>
@@ -163,7 +160,6 @@ namespace JMC_Music_Player.GUI
             }
 
         }
-
         #endregion
 
         #region FormDisplayMethods
@@ -317,7 +313,6 @@ namespace JMC_Music_Player.GUI
             mc.Next();
             HighlightCurrentSongInDisplay();
             SetButtons();
-            //this.BeginInvoke(new Action(() => mc.PlayPause()));
             mc.PlayPause();
         }
 
@@ -326,7 +321,6 @@ namespace JMC_Music_Player.GUI
             mc.Previous();
             HighlightCurrentSongInDisplay();
             SetButtons();
-            //this.BeginInvoke(new Action(() => mc.PlayPause()));
             mc.PlayPause();
         }
         #endregion

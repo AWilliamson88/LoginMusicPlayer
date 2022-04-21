@@ -114,7 +114,8 @@ namespace JMC_Music_Player
         /// </summary>
         public void Next()
         {
-            //mediaPlayer.Ctlcontrols.stop();
+            if (currentSong == null) return;
+
             if (songs.Find(currentSong).Next != null)
             {
                 currentSong = songs.Find(currentSong).Next.Value;
@@ -132,7 +133,8 @@ namespace JMC_Music_Player
         /// </summary>
         public void Previous()
         {
-            mediaPlayer.Ctlcontrols.stop();
+            if (currentSong == null) return;
+
             if (songs.Find(currentSong).Previous != null)
             {
                 currentSong = songs.Find(currentSong).Previous.Value;

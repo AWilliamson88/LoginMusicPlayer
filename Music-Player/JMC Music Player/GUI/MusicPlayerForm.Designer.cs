@@ -44,6 +44,7 @@ namespace JMC_Music_Player.GUI
             // 
             // NextBtn
             // 
+            this.NextBtn.Enabled = false;
             this.NextBtn.Location = new System.Drawing.Point(116, 206);
             this.NextBtn.Name = "NextBtn";
             this.NextBtn.Size = new System.Drawing.Size(105, 34);
@@ -64,6 +65,7 @@ namespace JMC_Music_Player.GUI
             // 
             // PreviousBtn
             // 
+            this.PreviousBtn.Enabled = false;
             this.PreviousBtn.Location = new System.Drawing.Point(9, 206);
             this.PreviousBtn.Name = "PreviousBtn";
             this.PreviousBtn.Size = new System.Drawing.Size(105, 34);
